@@ -10,6 +10,7 @@ Recomendação de Wiki - [Guia foca](https://www.guiafoca.org/)
 - useradd --help -- Caso não lembre como adicionar um novo usuário ( --help pode ser utilizados em outros comando para verificar como utiliza-los ).
 - sudo usermod -a -G grupos nmDoUsuario -- Adiciona o usuario em determinado grupo.
 - sudo apt install htop -- Instala a ferramenta htop para monitorar os recursos utilizados no servidor.
+- sudo apt install nomeDoPrograma -- Instala o programa desejado.
 ## Servidor e Banco de Dados (MySql)
 - sudo apt install mariadb-server -- Instala o servidor do banco de dados MariaDB.
 - sudo apt install php-mysql php-pdo -- Instala os conectores do banco no PHP.
@@ -18,9 +19,9 @@ Recomendação de Wiki - [Guia foca](https://www.guiafoca.org/)
 - sudo service mariadb stop -- Para o servidor.
 - sudo mysql -uroot -p -- Acessar o servidor.
 ### Criando um novo usuário
-- CREATE USER 'senac@localhost' IDENTIFIED BY 'senac123';
-- GRANT ALL PRIVILEGES ON * . * TO 'senac@localhost';
-- FLUSH PRIVILEGES;
+- CREATE USER 'senac'@'localhost' IDENTIFIED BY 'senac123';
+- GRANT ALL PRIVILEGES ON * . * TO 'senac'@'localhost';
+- FLUSH PRIVILEGES; -- Atualiza a tabela de privilégios do usuário sem reiniciar o banco de dados.
 - exit
 -----------
 - mariadb -usenac -p -- Acessa o servidor do mariaDB com o usuário criado
