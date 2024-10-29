@@ -29,3 +29,7 @@ Recomendação de Wiki - [Guia foca](https://www.guiafoca.org/)
 - use nomeDoBanco -- Marca para conseguir usar o banco criado.
 - create table usuarios ( id int not null primary key auto_increment, login varchar(100) not null, nome varchar(100) not null, senha varchar(255) not null ); -- Cria uma tabela usuários.
 - show tables -- Exibe as tabelas existentes no Banco.
+### BackUp banco de dados
+- mysqldump -usenac -p webservices > backup.sql -- mysqldump -u_nome_usuario -p nome_banco > nome_arquivo -- Exporta o backup
+- less nome_arquivo --
+- mysql -usenac -p webservices_homologacao < backup.sql -- Importa o backup
