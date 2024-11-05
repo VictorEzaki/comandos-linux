@@ -33,3 +33,5 @@ Recomendação de Wiki - [Guia foca](https://www.guiafoca.org/)
 - mysqldump -usenac -p webservices > backup.sql -- mysqldump -u_nome_usuario -p nome_banco > nome_arquivo -- Exporta o backup
 - less nome_arquivo --
 - mysql -usenac -p webservices_homologacao < backup.sql -- Importa o backup
+- gzip webservices_20241104_2110.sql -- Compacta o backup do banco
+- gunzip -c webservices_20241104_2110.sql.gz | mysql -usenac -p webservices_homologacao -- Descompacta e faz o rollback
