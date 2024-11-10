@@ -35,7 +35,7 @@ Recomendação de Wiki - [Guia foca](https://www.guiafoca.org/)
 - mysql -usenac -p webservices_homologacao < backup.sql -- Importa o backup
 - gzip webservices_20241104_2110.sql -- Compacta o backup do banco
 - gunzip -c webservices_20241104_2110.sql.gz | mysql -usenac -p webservices_homologacao -- Descompacta e faz o rollback
-### Alguns comando do MySql
+## Alguns comando do MySql
 {
 USE webservices;
  
