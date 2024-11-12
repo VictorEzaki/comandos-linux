@@ -35,6 +35,10 @@ Recomendação de Wiki - [Guia foca](https://www.guiafoca.org/)
 - mysql -usenac -p webservices_homologacao < backup.sql -- Importa o backup
 - gzip webservices_20241104_2110.sql -- Compacta o backup do banco
 - gunzip -c webservices_20241104_2110.sql.gz | mysql -usenac -p webservices_homologacao -- Descompacta e faz o rollback
+### Comandos SSH
+- sudo apt install ssh -- Instala o SSH no terminal linux.
+- wsl -d Debian localhost -I -- disponibiliza o IP do debian.
+- ssh usuario@000.000.000.00 -- Acessa o servidor. 
 ## Alguns comando do MySql
 {
 USE webservices;
