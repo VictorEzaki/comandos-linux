@@ -87,4 +87,8 @@ WHERE
 ORDER BY 
     (data_length + index_length) DESC;
 } - Mostra o tamanho da tabela
+## Configurando domínio com apache2
+- sudo mkdir /var/www/lab.test
+- sudo chown -R senac:senac /var/www/lab.test
+- sudo chmod -R 775 /var/www/lab.test
 
